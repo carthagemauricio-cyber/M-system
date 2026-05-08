@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-brand-gold: #D8A24A;
+  --color-brand-gold-soft: #E5B96A;
+  --color-bg-primary: #0B0B0B;
+  --color-bg-secondary: #141414;
+  --color-bg-card: #1B1B1B;
+  --color-text-main: #F5F5F5;
+  --color-text-muted: #BDBDBD;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-main);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Custom Utilities for cinematic feel */
+.glass-panel {
+  background: rgba(27, 27, 27, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.gold-glow {
+  box-shadow: 0 0 30px rgba(216, 162, 74, 0.15);
+}
+
+.gold-glow-strong {
+  box-shadow: 0 0 60px rgba(216, 162, 74, 0.25);
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 0 40px rgba(216, 162, 74, 0.2);
+}
+
+.text-glow {
+  text-shadow: 0 0 15px rgba(216, 162, 74, 0.3);
+}
+
+.gradient-text-gold {
+  background: linear-gradient(to right, #E5B96A, #D8A24A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
